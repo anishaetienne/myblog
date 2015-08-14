@@ -1,0 +1,6 @@
+<div>
+  <% @posts.each do |post| %>
+  <h2 class="post_title"><%= link_to post.title, post %></h2>
+  <p class="post_date"><small><%= post.created_at.strftime("%b. %d, %Y") %></small>
+<% end %>
+</div>

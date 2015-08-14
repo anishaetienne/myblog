@@ -1,0 +1,8 @@
+<div class="show">
+  <p><strong><%= @post.title %></strong><br>
+  <small>Submitted <%= time_ago_in_words(@post.created_at) %> ago</small>
+</p>
+<p>
+<%= @post.body %>
+</p>
+</div>
